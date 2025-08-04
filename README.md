@@ -27,7 +27,7 @@
 7. `git init` 현재 폴더를 작업 디렉터리 폴더로 연결, 폴더경로 옆에 **master** 표시 생기면 성공!
 8. `git branch -M main` 깃 디렉터리 명칭을 브랜치라 부름. 해당 브랜치명을 개인에 맞게 변경. 기본이 **main** 개인 작업 시 main, 팀 작업 시 변경
 ---
-9. `git add .` **.**이란 작업 수정한 모든 파일dmf 대기소(스테이지)에 올린다는 뜻. cf. `git add README.md` : README.md 파일만 올리겠다는 뜻
+9. `git add .` **.**이란 작업 수정한 모든 파일을 대기소(스테이지)에 올린다는 뜻. cf. `git add README.md` : README.md 파일만 올리겠다는 뜻
 10. `git status` 현재 스테이지 확인 명령
 11. `git commit -m "기록메세지"` 현재 올리는 파일이 어떤 내용인지 기록
 12. `git remote add origin 깃허브저장소주소` 깃허브 저장소 업로드 위치가 어디인지 주소 연결
