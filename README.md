@@ -89,3 +89,4 @@
 * `git clone 주소붙여넣기`
 ### gitHub 수정된 작업물 내려받기
 * `git pull origin main`
+* 추가로 공부한 내용이 있을 때마다 위 과정 반복
