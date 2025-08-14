@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <style>
         /* w, h 설정 / padding 설정 / background color 설정 / font 설정 /  */
-        #pay thead {
+        #pay {
             width:1110px;
+        }
+        #pay thead {
             border-top:2px solid #000;
-            border-bottom:2px solid #000;
+            border-bottom:2px solid #000; /* 실선으로 변경하기 */
             background-color:#FAFAFA;
         }
         #pay thead .head_first {
@@ -24,28 +26,49 @@
             padding-bottom:30px;
         }
         #pay thead .head_first th img {}
-        #pay thead .head_first th span {
+        #pay thead .head_first th p {
             font-size:1.25rem;
             font-weight:600;
         }
         #pay thead .head_first th .pre_pay {
             font-size:1rem;
             font-weight:400;
+            color:#777777;
+            padding-top:12px;
         }
         #pay thead .head_second {
-            
-            
+
         }
         #pay thead .head_second th {
-            border-top:1px; solid #000;
+            border-top:1px dotted #aaa;
             padding-top:20px;
             padding-bottom:20px;
+            font-size:1.125rem;
+            font-weight:700;
         }
-        #pay thead .head_second th .origin_pay {}
+        #pay thead .head_second th:first-child {line-height:150%;}
+        #pay thead .head_second th .origin_pay {
+            color:#777777;
+            font-size:0.875rem;
+            /* padding-top:7px; 기존에 이렇게 작성했었는데 행간으로 조정해서 first-child에게 적용함 */
+        }
         #pay tbody {}
-        #pay tbody tr {}
-        #pay tbody tr td {}
-        #pay tbody tr td strong {}
+        #pay tbody tr {
+            
+        }
+        #pay tbody tr td {
+            padding-top:20px;
+            padding-bottom:20px;
+            text-align:center;
+            font-size:1rem;
+            font-weight:500;
+            border-bottom:1px solid #DDDDDD;
+        }
+        #pay tbody tr td strong {
+            color:#EE239B;
+            font-size:1rem;
+            font-weight:700;
+        }
         #pay tfoot {}
 
     </style>
@@ -56,7 +79,8 @@
             <tr class="head_first">
                 <th rowspan="2"><img src="./images/phone_img.png" alt=""></th>
                 <th colspan="4">
-                    <span>선불요금제(국제전화)</span><br>
+                    <p>선불요금제(국제전화)</p><br>
+                    <!-- span 태그는 inline인 태그기 때문에 마진,패딩이 위아래 요소와 겹쳐서 적용되므로 이럴 때는 block 태그로 바꿔줘야한다. (선불요금제를 span에서 p로 바꿈) -->
                     <span class="pre_pay">합리적인 선불요금제에 국제전화 혜택을 더한 알뜰한 요금제!</span>
                 </th>
                 <!-- <th>합치기</th>
@@ -65,7 +89,8 @@
             </tr>
             <tr class="head_second">
                 <!-- <th>합치기</th> -->
-                <th>기본요금<span class="origin_pay"><br>(부가세 포함금액)</span></th>
+                <th>기본요금<p class="origin_pay">(부가세 포함금액)</p></th>
+                <!-- 피그마에서는 기본요금(부가세 포함금액)이 하나로 잡히고 행간이 150%다. 두개를 따로 안 만들고 하나로 묶어서 생각하고 nth:child(1) 활용해서 행간 설정하면 된다. -->
                 <th>음성</th>
                 <th>문자</th>
                 <th>데이터</th>
