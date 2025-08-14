@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="../styles/reset.css">
+    <style>
+        /* w, h 설정 / padding 설정 / background color 설정 / font 설정 /  */
+        #pay thead {
+            width:1110px;
+            border-top:2px solid #000;
+            border-bottom:2px solid #000;
+            background-color:#FAFAFA;
+        }
+        #pay thead .head_first {
+        }
+        #pay thead .head_first th {
+            padding-top:30px;
+            padding-bottom:30px;
+        }
+        #pay thead .head_first th img {}
+        #pay thead .head_first th span {
+            font-size:1.25rem;
+            font-weight:600;
+        }
+        #pay thead .head_first th .pre_pay {
+            font-size:1rem;
+            font-weight:400;
+        }
+        #pay thead .head_second {
+            
+            
+        }
+        #pay thead .head_second th {
+            border-top:1px; solid #000;
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+        #pay thead .head_second th .origin_pay {}
+        #pay tbody {}
+        #pay tbody tr {}
+        #pay tbody tr td {}
+        #pay tbody tr td strong {}
+        #pay tfoot {}
+
+    </style>
+</head>
+<body>
+    <table id="pay">
+        <thead>
+            <tr class="head_first">
+                <th rowspan="2"><img src="./images/phone_img.png" alt=""></th>
+                <th colspan="4">
+                    <span>선불요금제(국제전화)</span><br>
+                    <span class="pre_pay">합리적인 선불요금제에 국제전화 혜택을 더한 알뜰한 요금제!</span>
+                </th>
+                <!-- <th>합치기</th>
+                <th>합치기</th>
+                <th>합치기</th> -->
+            </tr>
+            <tr class="head_second">
+                <!-- <th>합치기</th> -->
+                <th>기본요금<span class="origin_pay"><br>(부가세 포함금액)</span></th>
+                <th>음성</th>
+                <th>문자</th>
+                <th>데이터</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>국제선불 300M</td>
+                <td><strong>40,700</strong>원</td>
+                <td>집/이동전화 무제한(국제전화 매일 20분)</td>
+                <td>기본제공</td>
+                <td>300MB+3Mbps</td>
+            </tr>
+            <tr>
+                <td>국제선불 300M</td>
+                <td><strong>40,700</strong>원</td>
+                <td>집/이동전화 무제한(국제전화 매일 20분)</td>
+                <td>기본제공</td>
+                <td>300MB+3Mbps</td>
+            </tr>
+            <tr>
+                <td>국제선불 300M</td>
+                <td><strong>40,700</strong>원</td>
+                <td>집/이동전화 무제한(국제전화 매일 20분)</td>
+                <td>기본제공</td>
+                <td>300MB+3Mbps</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+    <hr>
+    <h1>행/열 합치기</h1>
+    <table id="test" style="border:1px solid #000;">
+        <tr>
+            <!-- <td colspan="2" style="border:1px solid #000;">1</td> -->
+            <!-- <td>2</td> -->
+            <td>1</td>
+            <td rowspan="2" style="border:1px solid #000;"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <!-- <td>4</td> 주석처리하기 -->
+        </tr>
+    </table>
+</body>
+</html>
