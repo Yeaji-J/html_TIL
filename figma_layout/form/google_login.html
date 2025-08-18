@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Google</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- 웹글꼴 (Noto Sans KR) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Reset -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/google_login.css">
+    <style>
+        /* 내부 스타일 시트 (HTML간 공유 불가하므로 외부연결을 권장한다) */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>Welcome back</h1>
+        <p>Welcome back! Please enter your details.</p>
+        <!-- form == block | 선택, 입력 양식을 묶는 그룹 -->
+        <form action="#" method="post" id="login_frm">
+            <fieldset class="id_pw_group"> <!-- block -->
+                <legend>입력양식</legend> <!-- inline -->
+                <dl>
+                    <dt>Email</dt>
+                    <dd><input type="text" name="user_email_id" id="user_email_id" class="id_pw" placeholder="Enter your email or id"></dd>
+                    <dt>Password</dt>
+                    <dd><input type="password" name="user_pw" id="user_pw" class="id_pw" placeholder="Enter your password"></dd>
+                </dl>
+                <p class="error">Please enter your ID</p>
+            </fieldset>
+            <fieldset class="btn_search_group">
+                <legend>버튼&찾기</legend>
+                <h2>Forgot password</h2>
+                <p><button type="submit" id="login_btn" class="btn">Login</button></p>
+                <p><a href="https://accounts.google.com/v3/signin/accountchooser?continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fgs_ssp%3DeJzj4tVP1zc0TDYuLitPjq9SYDRgdGDw4n87teFty4bXCzredC1527UDAOg4D9s%26q%3D%25ED%2595%2580%25ED%2584%25B0%25EB%25A0%2588%25EC%258A%25A4%25ED%258A%25B8%26rlz%3D1C1CHBD_koKR1083KR1152%26oq%3Dvlsxjfp%26gs_lcrp%3DEgZjaHJvbWUqEwgBEC4YgwEYxwEYsQMY0QMYgAQyBggAEEUYOTITCAEQLhiDARjHARixAxjRAxiABDINCAIQABiDARixAxiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABNIBCTI3MTBqMGoxNagCCLACAQ%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAZAAQ&hl=ko&ifkv=AdBytiNp-GgqRtEuXknwBajHgdlC3aGFTapM4hJS8cSJYElkJTF2dn-d9cvoCr5nl6qqwY-jjwWOlw&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1395064380%3A1755489659784315" target="_blank" id="sign_google" class="btn">Sign in with Google</a></p>
+            </fieldset>
+            <fieldset class="account">
+                <p>
+                    <a href="#" class="sign_up">
+                        <span>Don't have on account?</span>
+                        <em>Sign up for free</em>
+                    </a>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
