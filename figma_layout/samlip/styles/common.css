@@ -1,0 +1,86 @@
+/* CSS 변수 */
+:root {
+    /* --대상-용도:반복속성값; */
+    /* 글자크기 */
+    --text-title70:4.375rem;
+    --text-contents21:1.313rem;
+    --text-menu18:1.125rem;
+    --text-sub12:0.75rem;
+    /* 행간 */
+    --line-title:90%;
+    --line-contents:150%;
+    /* 자간 */
+    --letter-title:-0.02rem;
+    --letter-contents:-0.02rem;
+    /* 굵기 */
+    --weight-title:700;
+    /* 색상(테두리색, 배경색, 글자색 등 */
+    --color-white:#fff;
+    --color-gray4:#444;
+    --color-graya:#aaa;
+    --color-title_bnr2:#4a6512;
+    --color-title_bnr3:#642c10;
+    --color-title_bnr4:#1d356d;
+    /* 레이아웃 정보 */
+    --color-desktop:1440px;
+    --margin-desktop-l-r:80px;
+}
+/* header 포함 공통 */
+#wrap {}
+/* header */
+#wrap header {
+    background:lime;
+    display:flex;
+    flex-flow:row nowrap; /* 메인축(수평) 줄바꿈 안 함 */
+    justify-content:space-between; /* 메인축 정렬(양쪽끝) */
+    align-items:center; /* 교차축(수직) 가운데 */
+    height:92px;
+    padding:0 80px;
+}
+    /* logo */
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+    /* nav */
+#wrap header nav {
+    background:aqua;
+    
+}
+#wrap header nav .gnb {
+    display:flex; /* 자식 li 정렬 위한 값 */
+    flex-flow:row nowrap;
+    gap:70px;
+    align-items:center;
+    
+}
+#wrap header nav .gnb > li {}
+#wrap header nav .gnb > li > a {
+    font-size:var(--text-menu18);
+    background:pink;
+    display:block;
+    height:92px;
+    padding:37px 0;
+    /* height와 padding 각각을 줘도 되고 이 경우에는 한 줄이기 때문에 line-height: 92px; 로 한 번에 처리할 수 있다 */
+}
+#wrap header .right_menu {
+    background:yellow;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+}
+#wrap header .right_menu > li {}
+#wrap header .right_menu > li:first-child::after {
+    content:''; display:block;
+    width:1px; height:13px; background:var(--color-graya);
+    margin:0 40px;
+}
+#wrap header .right_menu > li:first-child{
+    display:flex; /* customer와 구분선의 부모 */
+    flex-flow:row nowrap;
+}
+
+#wrap header .right_menu > li > a {
+    font-size:var(--text-sub12);
+}
+#wrap header .right_menu > li > a img {}
+#wrap main {}
