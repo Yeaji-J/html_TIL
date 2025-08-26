@@ -3,7 +3,6 @@
 }
 /* 회원가입 */
 #wrap .login_musescore {
-    background:pink;
     text-align:center;
 }
 #wrap .login_musescore h1 {
@@ -16,13 +15,31 @@
 }
 #wrap .login_musescore .sign_up span {
 }
-#wrap .login_musescore .sign_up a {}
+#wrap .login_musescore .sign_up a {
+    color:#6B5DFE;
+}
 /* 연동 로그인 */
-#wrap .sns_login {}
-#wrap .sns_login li {}
-#wrap .sns_login li a {}
-#wrap .sns_login li a img {}
-#wrap .sns_login li a img {}
+#wrap .sns_login {
+    background:peru;
+    margin-top:11px;
+    display:flex;
+    flex-flow:row nowrap;
+}
+#wrap .sns_login li {
+    background:#fff;
+    border-radius:50px;
+    border:#d9d9d9;
+    
+}
+#wrap .sns_login li .google_login {}
+#wrap .sns_login li .google_login img {
+    background:#fff;
+    border-radius:50px;
+}
+#wrap .sns_login li .facebook_login {}
+#wrap .sns_login li .facebook_login img {}
+#wrap .sns_login li .apple_login {}
+#wrap .sns_login li .apple_login img {}
 /* 구분선 */
 #wrap span {}
 /* 아이디 비번 입력창 */
