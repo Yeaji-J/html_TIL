@@ -13,6 +13,37 @@
     <link rel="stylesheet" href="./styles/musescore_login.css">
 </head>
 <body>
-    
+    <div id="wrap">
+        <!-- 회원가입 -->
+        <section class="login_musescore">
+            <h1>Log in to Musescore</h1>
+            <div class="sign_up">
+                <span>Don't have an account?</span>
+                <a href="#">Sign Up</a>
+            </div>
+        </section>
+        <!-- 연동 로그인 -->
+        <ul class="sns_login">
+            <li><a href="#"><img src="./images/google-login.png" alt="구글 아이디로 로그인">Continue with Google</a></li>
+            <li><a href="#"><img src="./images/fb-login.png" alt="페이스북으로 로그인"></a></li>
+            <li><a href="#"><img src="./images/apple-login.png" alt="애플 아이디로 로그인"></a></li>
+        </ul>
+        <!-- 구분선 -->
+        <span>or</span>
+        <!-- 아이디 비번 입력창 -->
+        <div class="musescore_login_input">
+            <div class="email_input">
+                <h2>Email or username</h2>
+                <input type="text" name="email_or_username" class="input_id">
+            </div>
+            <div class="pw_input">
+                <span class="pw">Password</span>
+                <a href="#">Forgot your password?</a>
+                <input type="password" name="password" class="input_pw">
+            </div>
+            <!-- 로그인 버튼 -->
+        <a href="#" class="log_in_btn">Log in</a>
+        </div>
+    </section>
 </body>
 </html>

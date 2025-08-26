@@ -14,6 +14,7 @@
     --letter-contents:-0.02rem;
     /* 굵기 */
     --weight-title:700;
+    --weight-semibold:600;
     /* 색상(테두리색, 배경색, 글자색 등 */
     --color-white:#fff;
     --color-gray4:#444;
@@ -29,13 +30,13 @@
 #wrap {}
 /* header */
 #wrap header {
-    background:lime;
     display:flex;
     flex-flow:row nowrap; /* 메인축(수평) 줄바꿈 안 함 */
     justify-content:space-between; /* 메인축 정렬(양쪽끝) */
     align-items:center; /* 교차축(수직) 가운데 */
-    height:92px;
+    height:92px; width:1920px;
     padding:0 80px;
+    position:relative; /* lnb 크기+위치 부모 기준 */
 }
     /* logo */
 #wrap header h1 {}
@@ -43,27 +44,67 @@
 #wrap header h1 a img {}
     /* nav */
 #wrap header nav {
-    background:aqua;
-    
 }
 #wrap header nav .gnb {
     display:flex; /* 자식 li 정렬 위한 값 */
     flex-flow:row nowrap;
     gap:70px;
-    align-items:center;
-    
 }
-#wrap header nav .gnb > li {}
+#wrap header nav .gnb > li {
+}
 #wrap header nav .gnb > li > a {
     font-size:var(--text-menu18);
-    background:pink;
     display:block;
     height:92px;
     padding:37px 0;
     /* height와 padding 각각을 줘도 되고 이 경우에는 한 줄이기 때문에 line-height: 92px; 로 한 번에 처리할 수 있다 */
 }
+/* 메인메뉴에 마우스 올렸을 때 서브메뉴 보이기(공용) */
+#wrap header nav .gnb > li:hover .lnb {
+    display:flex;
+}
+/* 서브메뉴 시작 */
+#wrap header nav .gnb > li .lnb {
+    background:rgba(255,255,255,0.7);
+    /* 교차시키기(absolute) + 중첩순서(z-index) */
+    position:absolute;
+    z-index:90; 
+    width:100%; /* absolute와 함께 100%가 있으면 부모(position이 설정된)의 너비와 같다는 뜻 */
+    left:0; top:92px; /* absolute + 좌표가 있다면? 부모(pst) 기준 좌표 설정 뜻 */
+    height:100px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    gap:80px;
+    padding: 45px 147px;
+    display:none; /* 초기 숨기기*/
+}
+#wrap header nav .gnb > li:nth-child(3) .lnb {
+    height:230px; width:100%;
+    padding:31px 147px;
+}
+#wrap header nav .gnb > li:nth-child(5) .lnb {/* display:none; */}
+#wrap header nav .gnb > li .lnb > li {
+    display:flex;
+    flex-flow:column nowrap;
+    gap:16px;
+    align-items:center;
+}
+#wrap header nav .gnb > li .lnb > li > a {
+    font-size:var(--text-menu18); font-weight:var(--weight-semibold);
+}
+#wrap header nav .gnb > li .lnb li .lnb_depth2 {
+    display:flex;
+    flex-flow:column nowrap;
+    gap:16px; padding:;
+}
+#wrap header nav .gnb > li .lnb li .lnb_depth2 > li {
+    text-align:center;
+}
+#wrap header nav .gnb > li .lnb li .lnb_depth2 > li > a {
+    
+}
 #wrap header .right_menu {
-    background:yellow;
     display:flex;
     flex-flow:row nowrap;
     align-items:center;
@@ -78,7 +119,35 @@
     display:flex; /* customer와 구분선의 부모 */
     flex-flow:row nowrap;
 }
-
+#wrap header .right_menu > li:nth-child(2){
+    margin-right:40px;
+    position:relative;
+}
+/* 두번째 li에 마우스 올렸을 때 자식 언어선택 보이기 */
+#wrap header .right_menu > li:nth-child(2):hover .lang_select {
+    display:flex;
+}
+#wrap header .right_menu > li:nth-child(2) .lang_select {
+    /* 형제 또는 부모와 겹치는 디자인 요소는 -> absolute */
+    position:absolute; z-index:100; /* 0~999 */
+    display:flex;
+    flex-flow:column nowrap;
+    gap:10px;
+    /* 초기숨기기 */
+    display:none;
+}
+#wrap header .right_menu > li:nth-child(2) .lang_select a {
+    border:1px solid #aaa;
+    border-radius:50%;
+    background:#fff;
+    width:40px; line-height:40px;
+    text-align:center;
+    font-size:var(--text-sub12);
+}
+#wrap header .right_menu > li:nth-child(2) .lang_select a .kr {}
+#wrap header .right_menu > li:nth-child(2) .lang_select a .en {
+}
+#wrap header .right_menu > li:nth-child(2) .lang_select a .cn {}
 #wrap header .right_menu > li > a {
     font-size:var(--text-sub12);
 }

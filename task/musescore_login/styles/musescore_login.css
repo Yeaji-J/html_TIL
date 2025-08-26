@@ -1,0 +1,38 @@
+#wrap {
+    width:393px; height:430px;
+}
+/* 회원가입 */
+#wrap .login_musescore {
+    background:pink;
+    text-align:center;
+}
+#wrap .login_musescore h1 {
+    font-size:1.875rem;
+    font-weight:700;
+    padding-top:24px;
+}
+#wrap .login_musescore .sign_up {
+    padding-top:11px;
+}
+#wrap .login_musescore .sign_up span {
+}
+#wrap .login_musescore .sign_up a {}
+/* 연동 로그인 */
+#wrap .sns_login {}
+#wrap .sns_login li {}
+#wrap .sns_login li a {}
+#wrap .sns_login li a img {}
+#wrap .sns_login li a img {}
+/* 구분선 */
+#wrap span {}
+/* 아이디 비번 입력창 */
+#wrap .musescore_login_input {}
+#wrap .musescore_login_input .email_input {}
+#wrap .musescore_login_input .email_input h2 {}
+#wrap .musescore_login_input .email_input .input_id {}
+#wrap .musescore_login_input .pw_input_{}
+#wrap .musescore_login_input .pw_input .pw{}
+#wrap .musescore_login_input .pw_input a {}
+#wrap .musescore_login_input .pw_input .input_pw {}
+/* 로그인 버튼 */
+#wrap .log_in_btn
