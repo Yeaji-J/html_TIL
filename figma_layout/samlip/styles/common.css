@@ -3,9 +3,12 @@
     /* --대상-용도:반복속성값; */
     /* 글자크기 */
     --text-title70:4.375rem;
+    --text-sub_title40:2.5rem;
     --text-contents21:1.313rem;
+    --text-contents16:1rem;
     --text-menu18:1.125rem;
     --text-sub12:0.75rem;
+    --text-sub10:0.625rem;
     /* 행간 */
     --line-title:90%;
     --line-contents:150%;
@@ -19,24 +22,30 @@
     --color-white:#fff;
     --color-gray4:#444;
     --color-graya:#aaa;
+    --color-grayd:#ddd;
     --color-title_bnr2:#4a6512;
     --color-title_bnr3:#642c10;
     --color-title_bnr4:#1d356d;
+    --color-point:#36b4e5;
     /* 레이아웃 정보 */
-    --color-desktop:1440px;
+    --width-desktop:1440px;
     --margin-desktop-l-r:80px;
 }
+body,html {scroll-behavior:smooth;}
 /* header 포함 공통 */
-#wrap {}
+#wrap {padding-top:92px;}
 /* header */
 #wrap header {
     display:flex;
     flex-flow:row nowrap; /* 메인축(수평) 줄바꿈 안 함 */
     justify-content:space-between; /* 메인축 정렬(양쪽끝) */
     align-items:center; /* 교차축(수직) 가운데 */
-    height:92px; width:1920px;
+    height:92px;
     padding:0 80px;
-    position:relative; /* lnb 크기+위치 부모 기준 */
+    position:fixed; /* lnb 크기+위치 부모 기준 */
+    z-index:900; left:0; top:0; /* fixed 쓸 때는 좌표 쓰는 거 잊지 말기 */
+    width:100%; /* fixed or absolute 너비값을 재설정해야한다! */
+    background:var(--color-white);
 }
     /* logo */
 #wrap header h1 {}
@@ -68,7 +77,7 @@
     background:rgba(255,255,255,0.7);
     /* 교차시키기(absolute) + 중첩순서(z-index) */
     position:absolute;
-    z-index:90; 
+    z-index:90;
     width:100%; /* absolute와 함께 100%가 있으면 부모(position이 설정된)의 너비와 같다는 뜻 */
     left:0; top:92px; /* absolute + 좌표가 있다면? 부모(pst) 기준 좌표 설정 뜻 */
     height:100px;

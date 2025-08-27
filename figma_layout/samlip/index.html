@@ -84,9 +84,17 @@
                 <li><a href="#"><img src="./images/search.png" alt="검색하기"></a></li>
             </ul>
         </header>
-        <!-- 1행 광고배너 -->
         <main>
-            <div class="visual_wrap"><!-- 뷰포트 너비 안에서만 보이는 영역 설정 (overflow 영역 설정; 넘친 영역 숨기기) -->
+            <!-- 고정 페이지위치 -->
+            <div class="main_pst_link">
+                <a href="#row1_pst"><span class="name">Main</span><span class="circle"></span></a>
+                <a href="#row2_pst"><span class="name">News & Notice</span><span class="circle"></span></a>
+                <a href="#"><span class="name">Now @ Samlip Studio</span><span class="circle"></span></a>
+                <a href="#"><span class="name">Our Brands</span><span class="circle"></span></a>
+                <a href="#"><span class="name">Company Info</span><span class="circle"></span></a>
+            </div>
+            <!-- 1행 광고배너 --> <!-- 같은 태그 내 id로 위치 지정하기! -->
+            <div class="visual_wrap" id="row1_pst"><!-- 뷰포트 너비 안에서만 보이는 영역 설정 (overflow 영역 설정; 넘친 영역 숨기기) -->
                 <div class="visual_bnr_wrap"><!-- 개별 배너의 큰 부모 (너비 큼->가로 스크롤 문제발생) -->
                     <section class="bnr1">
                         <h2>Good Food &<br>Happy Life</h2>
@@ -105,9 +113,89 @@
                         <p>맛과 건강을 생각한 음식으로<br>가장 신선한 식품을 전달합니다</p>
                     </section>
                 </div>
+                <div class="prev_next_wrap">
+                    <a href="#" class="prev"><img src="./images/arrow_next_prev.png" alt="이전 뉴스 보기"></a>
+                    <a href="#" class="next"><img src="./images/arrow_next_prev.png" alt="이전 뉴스 보기"></a>
+                </div>
+                </div>
+            <!-- 2행 뉴스&공지사항 -->
+            <div class="news_notice_wrap" id="row2_pst"> <!-- 2행 바로가기 링크 설정 -->
+                <div class="title">
+                    <h2>News & Notice</h2>
+                    <p>SPC Samlip news updates, from a company that is always happy.</p>
+                </div>
+                <div class="card_wrap"><!-- 전체 영역 -->
+                    <div class="card_wrap_visible"><!-- 보이는 영역 -->
+                        <section class="card_news_1">
+                            <a href="#" class="card_1">
+                                <p class="photo"><img src="./images/news_card_001.jpg" alt=""></p>
+                                <h3>삼립, ‘초당옥수수 미니꿀약과’ 출시</h3>
+                            </a>
+                            <span class="date">2025년 08월 22일</span>
+                        </section>
+                        <section class="card_news_2">
+                            <a href="#" class="card_2">
+                                <p class="photo"><img src="./images/news_card_002.jpg" alt=""></p>
+                                <h3>삼립 웰니스 브랜드 피그인더가든, ‘소스닭 제로슈거’ 6종 출시</h3>
+                            </a>
+                            <span class="date">2025년 08월 22일</span>
+                        </section>
+                        <section class="card_news_3">
+                            <a href="#" class="card_3">
+                                <p class="photo"><img src="./images/news_card_003.jpg" alt=""></p>
+                                <h3>삼립, 칼로리·당 없는 ‘얼려먹는 젤리뽀 zero’ 출시</h3>
+                            </a>
+                            <span class="date">2025년 08월 22일</span>
+                        </section>
+                        <section class="card_news_4">
+                            <a href="#" class="card_4">
+                                <p class="photo"><img src="./images/news_card_004.jpg" alt=""></p>
+                                <h3>삼립, ‘크보빵’ 1000만개 판매 돌파</h3>
+                            </a>
+                            <span class="date">2025년 08월 22일</span>
+                        </section>
+                        <!-- 카드목록 -->
+                        <!-- div class= card_wrap_invisible -->
+                        <section class="card_news_1">
+                            <a href="#" class="card_1">
+                                <p class="photo"><img src="./images/news_card_001.jpg" alt=""></p>
+                                <h3>삼립, ‘초당옥수수 미니꿀약과’ 출시</h3>
+                            </a>
+                            <span class="date">2025년 08월 22일</span>
+                        </section>
+                        <section class="card_news_2">
+                            <a href="#" class="card_2">
+                                <p class="photo"><img src="./images/news_card_002.jpg" alt=""></p>
+                                <h3>삼립 웰니스 브랜드 피그인더가든, ‘소스닭 제로슈거’ 6종 출시</h3>
+                            </a>
+                            <span class="date">2025년 08월 22일</span>
+                        </section>
+                        <section class="card_news_3">
+                            <a href="#" class="card_3">
+                                <p class="photo"><img src="./images/news_card_003.jpg" alt=""></p>
+                                <h3>삼립, 칼로리·당 없는 ‘얼려먹는 젤리뽀 zero’ 출시</h3>
+                            </a>
+                            <span class="date">2025년 08월 22일</span>
+                        </section>
+                        <section class="card_news_4">
+                            <a href="#" class="card_4">
+                                <p class="photo"><img src="./images/news_card_004.jpg" alt=""></p>
+                                <h3>삼립, ‘크보빵’ 1000만개 판매 돌파</h3>
+                            </a>
+                            <span class="date">2025년 08월 22일</span>
+                        </section>
+                    </div>
+                </div>
+                <div class="prev_next_wrap">
+                    <a href="#" class="prev"><img src="./images/arrow_next_prev.png" alt="이전 뉴스 보기"></a>
+                    <a href="#" class="next"><img src="./images/arrow_next_prev.png" alt="이전 뉴스 보기"></a>
+                </div>
+                <a href="#" class="view_all_btn">
+                    <img src="./images/article.png" alt="">
+                    <span>View All News</span>
+                </a>
             </div>
         </main>
     </div>
-    
 </body>
 </html>
