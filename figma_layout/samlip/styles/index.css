@@ -157,7 +157,7 @@
 }
 #wrap main .news_notice_wrap .card_wrap .card_wrap_visible section:hover {
     border:1px solid var(--color-point);
-}}
+}
 #wrap main .news_notice_wrap .card_wrap .card_wrap_visible .card_news_1 {}
 #wrap main .news_notice_wrap .card_wrap .card_wrap_visible .card_news_1 .card_1 {}
 #wrap main .news_notice_wrap .card_wrap .card_wrap_visible .card_news_1 .card_1 .photo {}
@@ -174,11 +174,93 @@
 #wrap main .news_notice_wrap .card_wrap .card_wrap_visible .date {
     position:absolute; left:20px; bottom:20px;
 }
-#wrap .news_notice_wrap .view_all_btn {
+#wrap main .news_notice_wrap .view_all_btn {
     width:187px; height:40px;
     border:1px solid var(--color-grayd);
     display:flex; flex-flow:row nowrap;
     justify-content: center; align-items:center; gap:10px;
 }
-#wrap .news_notice_wrap .view_all_btn img {}
-#wrap .news_notice_wrap .view_all_btn span{}
+#wrap main .news_notice_wrap .view_all_btn img {}
+#wrap main .news_notice_wrap .view_all_btn span{}
+/* -------------------------------------footer------------------------------------------- */
+#wrap footer {
+    padding:50px 80px;
+}
+#wrap footer .ft_top {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between; align-items:center;
+}
+#wrap footer .ft_top .menu {
+    width:1000px; height:60px;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    gap:40px;
+}
+#wrap footer .ft_top .menu a {}
+#wrap footer .ft_top .menu a:nth-child(1) {
+    font-size:var(--text_contents16);
+    font-weight:var(--weight-semibold);
+    color:var(--color-ft-point-b);
+}
+#wrap footer .ft_top .menu a:nth-child(2) {
+    font-size:var(--text_contents16);
+    font-weight:var(--weight-semibold);
+    color:var(--color-ft-point-r);
+}
+#wrap footer .ft_top .menu a img {
+    width:75px; height:60px;
+}
+#wrap footer .ft_top .site_all {
+    display:flex; flex-flow:row nowrap;
+    align-items:center;
+    gap:50px;
+    
+}
+#wrap footer .ft_top .site_all li {} /* 공통 */
+#wrap footer .ft_top .site_all li:first-child {
+    position:relative;
+}
+#wrap footer .ft_top .site_all li p {
+    background:var(--color-white);
+    background-image:url(../images/arrow_down.png);
+    background-repeat:no-repeat;
+    border:1px solid var(--color-grayd);
+    background-position:90% center;
+    padding:10px; height:40px;
+    
+} /* 공통 */
+#wrap footer .ft_top .site_all li .family_sites {
+    /* display:none; */
+    background:var(--color-white);
+    border:2px solid var(--color-gray4);
+    display:none;
+    position:absolute; width:100%; /* absolute의 부모relative의 너비만큼 차지하라 */
+    bottom:40px;
+    height:250px; overflow:auto;
+}
+#wrap footer .ft_top .site_all > li:hover .family_sites{display:block;}
+#wrap footer .ft_top .site_all li .family_sites li {
+    /* display:none; */
+padding:10px;
+}
+#wrap footer .ft_top .site_all li .family_sites li a {
+}
+#wrap footer .ft_top .site_all li:nth-child(2) {}
+#wrap footer .ft_top .site_all li:nth-child(1) p {
+    width:273px;
+}
+#wrap footer .ft_top .site_all li:nth-child(2) p {
+    width:204px;
+}
+#wrap footer .ft_top .site_all li:nth-child(2) .sitemap_wrap {display:none;
+}/* 초기숨기기 */
+#wrap footer .ft_top .site_all li:nth-child(2) .sitemap_wrap .sitemap_contents {}
+#wrap footer .ft_top .site_all li:nth-child(2) .sitemap_wrap .sitemap_contents h2 {}
+#wrap footer .ft_top .site_all li:nth-child(2) .sitemap_wrap .sitemap_contents button {}
+#wrap footer .ft_btm {}
+#wrap footer .ft_btm address {
+    padding:26px 0;
+    line-height:var(--line-contents);
+}
+#wrap footer .ft_btm address p {}
