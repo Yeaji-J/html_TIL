@@ -1,5 +1,6 @@
 #wrap {
     width:393px; height:430px;
+    margin:0 auto;
 }
 /* 회원가입 */
 #wrap .login_musescore {
@@ -25,11 +26,25 @@
     display:flex;
     flex-flow:row nowrap;
 }
+#wrap .sns_login li:first-child {
+    width:208px; height:42px;
+    background-color:#6B5DFE;
+} 
+#wrap .sns_login li:nth-child (2),
+#wrap .sns_login li:nth-child (3) {
+    width:48px; height:42px;
+} 
+#wrap .sns_login .google_login {}
+#wrap .sns_login .google_login a {}
+#wrap .sns_login .google_login a img {}
+#wrap .sns_login .facebook_login {}
+#wrap .sns_login .facebook_login a {}
+#wrap .sns_login .facebook_login a img {}
+#wrap .sns_login .apple_login {}
+#wrap .sns_login .apple_login a {}
+#wrap .sns_login .apple_login a img {}
 #wrap .sns_login li {
     background:#fff;
-    border-radius:50px;
-    border:#d9d9d9;
-    
 }
 #wrap .sns_login li .google_login {}
 #wrap .sns_login li .google_login img {

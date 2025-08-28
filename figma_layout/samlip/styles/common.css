@@ -9,6 +9,9 @@
     --text-menu18:1.125rem;
     --text-sub12:0.75rem;
     --text-sub10:0.625rem;
+    --text-business-title50:3.125rem;
+    --text-business-heading32:2rem;
+    --text-business-kw24:1.5rem;
     /* 행간 */
     --line-title:90%;
     --line-contents:150%;
@@ -27,6 +30,9 @@
     --color-title_bnr3:#642c10;
     --color-title_bnr4:#1d356d;
     --color-point:#36b4e5;
+    --color-point_y:#f3c300;
+    --color-bg:#fcfcfc;
+    --color-bg_circle:#f1f1f1;
     /* 레이아웃 정보 */
     --width-desktop:1440px;
     --margin-desktop-l-r:80px;
