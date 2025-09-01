@@ -1,0 +1,96 @@
+#wrap {}
+#wrap header {box-shadow:0 0 10px rgba(0,0,0,0.25);}
+#wrap header .header_contents {
+    max-width:1200px; height:64px;
+    margin:0 auto;
+    background:salmon;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+} /* 실제 내용요소기 때문에 가로 세로 넓이 설정 */
+#wrap header .header_contents h1 {}
+#wrap header .header_contents h1 a {}
+#wrap header .header_contents > nav {
+}
+#wrap header .header_contents > nav a {
+    margin-left:16px;
+}
+#wrap header .header_contents > nav a:hover {font-weight:700;}
+#wrap header .header_contents .m_nav {display:none;}
+#wrap header .header_contents .m_nav a {}
+#wrap header .header_contents .m_nav > nav {}
+#wrap header .header_contents .m_nav > nav a {}
+/* ---------------------main */
+#wrap main {}
+#wrap main .slide_wrap {
+    max-width:1200px; overflow:hidden; margin:0 auto;
+    position:relative;
+}
+#wrap main .slide_wrap .slide_container {
+    display:flex;
+    flex-flow:row nowrap; width:max-content;
+    align-items:center;
+}
+#wrap main .slide_wrap .slide_container .slide {
+    max-width:1200px; width:1200px; height:650px;
+    overflow:hidden;
+    background-size:cover;
+    background-position:center;}
+#wrap main .slide_wrap .slide_container .slide1 {background-image:url(https://images.unsplash.com/photo-1498100152307-ce63fd6c5424?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+#wrap main .slide_wrap .slide_container .slide2 {background-image:url(https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+#wrap main .slide_wrap .slide_container .slide3 {background-image:url(https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+#wrap main .slide_wrap .slide_container .slide4 {background-image:url(https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+#wrap main .slide_wrap .slide_container .slide5 {background-image:url(https://images.unsplash.com/photo-1496284575094-d5b92db3890d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+#wrap main .slide_wrap .slide_container .slide6 {background-image:url(https://images.unsplash.com/photo-1552944150-6dd1180e5999?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);}
+#wrap main .slide_wrap .slide_container .active {}
+#wrap main .slide_wrap .prev {left:15px;}
+#wrap main .slide_wrap .next {right:15px;}
+#wrap main .slide_wrap .prev, #wrap main .slide_wrap .next {
+    color:#fff;
+    position:absolute; top:313px;
+    /* max-width:1200px; width:1200px; height:650px; */
+}
+#wrap main .slide_wrap .pagenation {position:absolute;  bottom:31px;/* left:50%; /* 퍼센트로 쓰면 계산할 필요없음, 근데 컨텐츠 내용 크기가 옆으로 길기 때문에 기준점이 우측으로 밀릴 수 있음.. 그래서 아래처럼 쓸 수 있음 */
+    left:0; width:100%; text-align:center;
+    background:salmon;
+    color:#fff;}
+#wrap main .slide_wrap .pagenation span {}
+#wrap main .slide_wrap .pagenation span.active {}
+/* ---------------------main 1행 광고*/
+/* ---------------------main 2행 소개*/
+#wrap main .info {
+    max-width:1200px; height:270px; margin:0 auto;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+    background:lightseagreen;
+    
+}
+#wrap main .info a {
+    width:100px; height:100px;
+    border:1px solid #000;
+    border-radius:100%;
+    text-align:center;
+    line-height:100px;
+}
+#wrap main .info a:hover {
+    width:170px; height:170px;
+    line-height:170px;
+}
+/* ---------------------------------------- 3행 입양문의 */
+#wrap .inquiry {}
+#wrap .inquiry h2 {}
+#wrap .inquiry #adoption_frm {
+    display:flex;
+    flex-flow:column nowrap;
+
+}
+#wrap .inquiry #adoption_frm::placeholder {}
+#wrap .inquiry #adoption_frm input[type=text],
+#wrap .inquiry #adoption_frm input[type=number],
+#wrap .inquiry #adoption_frm textarea#content {
+    background:#eee; width:100%;
+}
+#wrap .inquiry #adoption_frm #inquiry_btn {}
