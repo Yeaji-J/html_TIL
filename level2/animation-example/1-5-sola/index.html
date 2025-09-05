@@ -23,18 +23,25 @@
             background-position:center;
             opacity:0; transition:opacity 0.5s;
         }
-        .slide_wrap .slide_c .slide1 {background-image:url(images/bg1.jpg); opacity:1}
-        .slide_wrap .slide_c .slide2 {background-image:url(images/bg2.jpg);}
+        .slide_wrap .slide_c .slide1 {background-image:url(images/bg1.jpg); opacity:1; animation:bg 2s linear both;}
+        .slide_wrap .slide_c .slide2 {background-image:url(images/bg2.jpg); }
         .slide_wrap .slide_c .slide3 {background-image:url(images/bg3.jpg);}
         .slide_wrap .slide_c .slide p {
             text-align:center; color:#fff;
             font-size:3rem; letter-spacing:-1px;
-            position:relative; top:400px;
+            position:relative; top:400px; animation: txt 1.5s ease both; /* 한 번 재생되는 애니메이션에는 마지막에 both 붙여주기 */
         }
         /* class */
-
+        
         /* animation */
-
+        @keyframes bg {
+            from {background-size:100% auto;}
+            to {background-size:120% auto;}
+        }
+        @keyframes txt {
+            from {opacity:0; transform:translateY(10px) scale(0.8);}
+            to {opacity:1; transform:translateY(-10px) scale(1);}
+        }
     </style>
     <script>
         window.onload=function(){
